@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Kahvaltım</string>
+
+    <string-array name="urunadi">
+        <item>Kahvaltı 1</item>
+        <item>Kahvaltı 2</item>
+        <item>Kahvaltı 3</item>
+        <item>Kahvaltı 4</item>
+        <item>Kahvaltı 5</item>
+    </string-array>
+
+    <string-array name="urunaciklamasi">
+        <item>Açıklama 1</item>
+        <item>Açıklama 2</item>
+        <item>Açıklama 3</item>
+        <item>Açıklama 4</item>
+        <item>Açıklama 5</item>
+    </string-array>
+
+    <string-array name="urunfiyati">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="urunresmi">
+        <item>@drawable/sepet</item>
+        <item>@drawable/kahvalti1</item>
+        <item>@drawable/kahvalti2</item>
+        <item>@drawable/kahvalti3</item>
+        <item>@drawable/kahvalti4</item>
+        <item>@drawable/kahvalti6</item>
+        <item>@drawable/kahvalti7</item>
+        <item>@drawable/kahvalti8</item>
+        <item>@drawable/kahvalti9</item>
+        <item>@drawable/kahvalti10</item>
+    </string-array>
+    <string name="title_activity_login">Giriş</string>
+
+</resources>

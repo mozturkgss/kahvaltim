@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_adres"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kahvaltim.AdresActivity"
+    android:background="@android:color/background_light">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/textViewadisoyadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adı Soyadı"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/textViewadres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adres"
+        android:maxLines="6"
+        android:singleLine="false"
+        android:lines="6"
+        android:gravity="top|left"
+        android:layout_below="@+id/textViewadresadi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/textViewilce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İlçe"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/textViewadres"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ok"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton3"
+        android:background="@android:color/background_light"
+        android:onClick="adresekleclick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back"
+        android:id="@+id/imageButton"
+        android:background="@android:color/background_light"
+        android:onClick="gericlick"
+        android:layout_below="@+id/spinnerill"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerill"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@+id/textViewilce"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/textViewadresadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adres Adı"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/textViewadisoyadi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

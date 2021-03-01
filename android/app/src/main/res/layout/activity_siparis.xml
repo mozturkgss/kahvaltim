@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_siparis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kahvaltim.SiparisActivity"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:text="Adres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp" />
+
+    <TextView
+        android:text="Adres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp" />
+
+    <ImageButton
+        app:srcCompat="@drawable/add"
+        android:id="@+id/imageButton6"
+        android:background="@android:color/background_light"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/spinneradres"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="adresclick" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinneradres"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/textViewTutar"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignEnd="@+id/textViewTutar" />
+
+    <RadioButton
+        android:text="Kapıda Ödeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton"
+        android:layout_marginTop="14dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="true" />
+
+    <TextView
+        android:text="Ödeme Türü"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/spinneradres"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next"
+        android:id="@+id/imageButton4"
+        android:background="@android:color/background_light"
+        android:onClick="ilericlick"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Toplam Tutar"
+        android:layout_height="100dp"
+        android:id="@+id/textView4"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_width="200dp"
+        android:layout_above="@+id/imageButton6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="0,00 TL"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/textViewTutar"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_toLeftOf="@+id/imageButton6"
+        android:layout_toStartOf="@+id/imageButton6"
+        android:layout_above="@+id/imageButton6" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back"
+        android:id="@+id/imageButton5"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="14dp"
+        android:onClick="gerisiparisclick"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+</RelativeLayout>
